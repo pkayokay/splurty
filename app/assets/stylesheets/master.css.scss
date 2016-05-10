@@ -1,3 +1,53 @@
+body {
+  background: #333;
+  color:#FFF;
+  font-family: "Helvetica Neue";
+  padding: 20px;
+}
 .clear {
   clear: both;
+}
+
+header {
+  height: 48px;
+  text-align: center;
+  border-bottom: 2px solid #565656;
+}
+
+h1 {
+  font-weight: 100;
+  text-align: center;
+}
+
+.slogan {
+  color: #f1f1f1;
+  font-size: 20px;
+}
+
+.links {
+}
+
+.links a {
+  color: #f1f1f1;
+  font-size: 20px;
+  padding: 0 10px;
+}
+
+
+
+
+@media (max-width: 992px) {
+
+  header {
+    height: 74px;
+  }
+}
+
+
+
+@media (max-width: 767px) {
+
+  h1 {
+    font-size: 28px;
+  }
 }
