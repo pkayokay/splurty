@@ -12,11 +12,13 @@
 </head>
 <body>
   <header>
-    <div class="col-xs-6 slogan">
-      Be inspired.
+    <div class="col-md-6 slogan">
+      <%= link_to new_quote_path do %>
+        Be inspired.
+      <% end %>
     </div>
-    <div class="col-xs-6 links">
-      <%= link_to 'Contribute', '#' %>
+    <div class="col-md-6 links">
+      <%= link_to 'Contribute', new_quote_path %>
       <%= link_to 'About', '#' %>
     </div>
   </header>
@@ -26,7 +28,10 @@
   </div>
   <div class="footer">
     <div class="container">
-      <div class="col-xs-12">
+      <div class="col-xs-6">
+        <%= link_to "I need more inspiration.", root_path %>
+      </div>
+      <div class="col-xs-6">
         Developed by <a href="http://github.com/pkayokay" target="_blank">Paul Kim</a>
       </div>
     </div>

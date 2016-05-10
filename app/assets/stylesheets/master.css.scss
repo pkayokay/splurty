@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  background: #333;
+  background: #222;
   color:#FFF;
   font-family: "Oswald", sans-serif;
   padding: 20px 0;
@@ -35,10 +35,12 @@ h2 {
   text-align: center;
 }
 
-.slogan {
+.slogan a,
+.slogan a:hover {
   color: #FFE564;
   font-size: 20px;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
+  text-decoration: none;
 }
 
 .links {
@@ -58,7 +60,11 @@ h2 {
   text-decoration: none;
 }
 
-
+.btn-yellow,
+.btn-yellow:hover {
+  background: #FFE564;
+  color: #444;
+}
 
 .footer {
   position: absolute;
@@ -82,8 +88,10 @@ h2 {
 
   h1 {
     font-size: 40px;
+    margin-top: 90px;
     padding: 0
   }
+
 }
 
 @media (max-width: 500px) {
