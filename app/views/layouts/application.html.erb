@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Be inspired. </title>
+  <title>Splurty | Be inspired </title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -14,7 +14,7 @@
   <header>
     <div class="col-md-6 slogan">
       <%= link_to root_path do %>
-        Be inspired.
+        Splurty <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
       <% end %>
     </div>
     <div class="col-md-6 links">
@@ -28,8 +28,10 @@
   </div>
   <div class="footer">
     <div class="container">
-      <div class="col-xs-12" style="margin-bottom:8px">
-        <%= link_to "Inspire me!", root_path %>
+      <div class="col-xs-12">
+        <%= link_to root_path do %>
+        <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+        <%end%>
       </div>
       <div class="col-xs-12">
         Developed by <a href="http://github.com/pkayokay" target="_blank"><span>Paul Kim</span></a>
