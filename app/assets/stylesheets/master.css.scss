@@ -61,10 +61,15 @@ h2 {
   text-decoration: none;
 }
 
-.btn-yellow,
-.btn-yellow:hover {
-  background: #FFD400;
-  color: #444;
+.links a:visited
+.links a:focus {
+  text-decoration: none;
+}
+
+.btn-create,
+.btn-create:hover {
+  background: #333;
+  color: #fff;
 }
 
 .footer {
@@ -76,20 +81,16 @@ h2 {
   text-align: center;
 }
 
-.footer span {
-  color: #00B1B1;
-}
+
 
 .footer a,
 .footer:focus,
 .footer:visited {
-  color: #000;
   text-decoration: none;
+  color: #333;
 }
 
 .footer a:hover {
-  color: #000;
-  opacity: .6;
   text-decoration: none;
 }
 
