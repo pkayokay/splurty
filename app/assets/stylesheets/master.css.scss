@@ -6,6 +6,7 @@ a:hover,
 a:focus {
   text-decoration: none;
   color: #333;
+  outline: 0;
 }
 
 abbr[title] { 
@@ -44,6 +45,7 @@ h1 {
 h2 {
   font-family: "Oswald", sans-serif;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 p {
@@ -57,8 +59,12 @@ p {
 
 .slogan a,
 .slogan a:hover {
-  color: #00B1B1;
+  color: #333;
   font-size: 24px;
+}
+
+.slogan span {
+  color: #FD4D4D;
 }
 
 .links {
@@ -77,10 +83,24 @@ p {
   opacity: .6;
 }
 
+.btn,
+.btn:hover,
+.btn:visited,
+.btn:focus,
+.btn:active,
+.btn:active:focus {
+  outline: none;
+}
+
+
 .btn-create,
-.btn-create:hover {
+.btn-create:hover,
+.btn-create:visited,
+.btn-create:focus {
   background: #333;
   color: #fff;
+  outline: none;
+  border:0 ;
 }
 
 .img-responsive {
@@ -103,7 +123,6 @@ p {
 }
 
 .about h2 {
-  margin-bottom:30px;
   text-align:left;
 }
 

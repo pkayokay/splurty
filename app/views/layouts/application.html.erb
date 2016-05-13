@@ -18,10 +18,38 @@
       <% end %>
     </div>
     <div class="col-md-6 links">
-      <%= link_to 'Contribute', new_quote_path %>
+      <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#myModal'} %>
       <%= link_to 'About', about_path %>
     </div>
   </header>
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" style="padding:15px; border:0 ">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        </div>
+        <%= simple_form_for Quote.new do |f| %>
+        <div class="modal-body" style="padding: 0 15px;">
+          <h2>Enter Your Quote Details</h1>
+            <%= f.input :saying %>
+            <%= f.input :author %>
+        </div>
+        <div class="modal-footer" style="padding: 30px 15px 15px; border:0">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <%= f.submit 'Create', class:'btn btn-create' %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
   <br class="clear"/>
   <div class="container">
     <% if flash[:error].present? %>
@@ -40,7 +68,7 @@
         <%end%>
       </div>
       <div class="col-xs-12">
-        Developed by <a href="http://github.com/pkayokay" target="_blank"><span style="color:#00B1B1">Paul Kim</span></a>
+        Developed by <a href="http://github.com/pkayokay" target="_blank"><span style="color:#FD4D4D">Paul Kim</span></a>
       </div>
     </div>
   </div>
