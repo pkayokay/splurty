@@ -5,7 +5,7 @@ a:visited,
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #333;
+  color: #fff;
   outline: 0;
 }
 
@@ -20,22 +20,31 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  padding: 20px 0;
   margin-bottom: 60px;
+  background: #222;
+  color: #fff;
+  padding:0 10px;
 }
 .clear {
   clear: both;
 }
 
 header {
-  height: 48px;
+  padding-top: 22px;
   text-align: center;
   font-family: "Oswald", sans-serif;
 }
 
+.top-margin {
+  margin-top: 60px;
+}
+
+.modal {
+  color: #333;
+}
+
 h1 {
   font-size: 50px;
-  margin-top: 100px;
   font-weight: 100;
   font-family: "Helvetica Neue";
   text-align: center;
@@ -53,25 +62,23 @@ p {
 }
 
 .slogan {
-  margin-bottom: 15px;
+  margin-top: -8px;
   text-transform: uppercase;
 }
 
 .slogan a,
 .slogan a:hover {
-  color: #333;
-  font-size: 24px;
+  color: #fff;
+  font-size: 28px;
 }
 
 .slogan span {
   color: #FD4D4D;
 }
 
-.links {
-}
 
 .links a {
-  color: #000;
+  color: #fff;
   font-size: 17px;
   padding: 0 10px;
   -webkit-transition: all 0.1s;
@@ -120,6 +127,7 @@ p {
 .glyphicon-refresh {
   font-size: 25px;
   margin: 8px 0 12px;
+  color: #fff;
 }
 
 .about h2 {
@@ -130,25 +138,47 @@ p {
   text-decoration: underline;
   font-style: italic;
 }
+
+.right {
+  text-align: right;
+}
+
 @media (min-width: 992px) {
   .container {
     width: 700px;
   }
+  .top-margin {
+    margin-top: 100px;
+  }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
+  
+  .top-margin {
+    margin-top: 40px;
+  }
+  .links {
+    padding-top: 15px
+  }
 
+  .about h2 {
+    text-align: center;
+  }
   h1 {
     font-size: 40px;
-    margin-top: 90px;
   }
 }
 
 @media (max-width: 500px) {
+  .right {
+    text-align: center;
+  }
+  .top-margin {
+    margin-top: 30px;
+  }
 
   h1 {
     font-size: 24px;
-    margin-top: 70px;
   }
 
   h2 {
