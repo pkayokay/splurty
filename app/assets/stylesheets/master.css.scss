@@ -285,9 +285,11 @@ body {
 
 @media (min-width: 992px) {
   .masthead,
-  .mastfoot,
   .cover-container {
     width: 992px;
+  }
+  .mastfoot {
+    width: 100%;
   }
 }
 
