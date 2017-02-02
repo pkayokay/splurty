@@ -2,7 +2,7 @@
 
 #### Ruby on Rails Web Application
 
-Generate a random quote from a database, or add your own! Check it out [here](https://splurty-paulkim.herokuapp.com/).
+Generate a random quote from the database, or add your own! Check it out [here](https://splurty-paulkim.herokuapp.com/).
 
 #### Preview
 
